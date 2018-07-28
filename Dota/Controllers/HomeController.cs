@@ -13,5 +13,13 @@ namespace Dota.Controllers
         {
             return View();
         }
+        public ActionResult Contact()
+        {
+            return View();
+        }
+        public ActionResult Heroes()
+        {
+            return View();
+        }
     }
 }
