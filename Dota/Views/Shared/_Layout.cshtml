@@ -1,13 +1,35 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    @Html.ActionLink("Dota 2", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-    @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
-    @Html.ActionLink("Heroes", "Heroes", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Dota 2</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+               
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Heroes", "Heroes", "Home")</li>
+                >
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+    </div>
     @RenderBody()
 </body>
 </html>
+
+@*<li><a href="#">@Html.ActionLink("Dota 2", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a></li>
+    <li><a href="#">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })</a></li>
+    <li><a href="#"> @Html.ActionLink("Heroes", "Heroes", "Home", new { area = "" }, new { @class = "navbar-brand" })</a></li>*@
