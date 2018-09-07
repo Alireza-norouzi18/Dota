@@ -21,5 +21,9 @@ namespace Dota.Controllers
         {
             return View();
         }
-    }
+        public ActionResult Abaddon()
+        {
+            return View();
+        }
+   }
 }
