@@ -99,12 +99,16 @@
     <Content Include="Content\img\BrownSelfassuredAbyssiniancat.webm" />
     <Content Include="Content\img\community_image_1383673780.gif" />
     <Content Include="Content\img\Curse_of_Avernus_icon.png" />
+    <Content Include="Content\img\Exort_icon.png" />
     <Content Include="Content\img\ezgif-2-4aaa8c0fd9.gif" />
     <Content Include="Content\img\ezgif-2-623c6fcbcd.gif" />
     <Content Include="Content\img\ezgif-2-68ad6cdb18.gif" />
     <Content Include="Content\img\ezgif-2-cdbeb911ff.gif" />
     <Content Include="Content\img\GrippingBareIberianchiffchaff.webm" />
+    <Content Include="Content\img\Invoke_icon.png" />
     <Content Include="Content\img\Mist_Coil_icon.png" />
+    <Content Include="Content\img\Quas_icon.png" />
+    <Content Include="Content\img\Wex_icon.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -123,6 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Hero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +143,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Heroes.cshtml" />
     <Content Include="Views\Home\Abaddon.cshtml" />
+    <Content Include="Views\Home\HeroName.cshtml" />
+    <Content Include="Views\Home\HeroDetails.cshtml" />
+    <Content Include="Views\Home\SpellDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,8 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Spell\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
